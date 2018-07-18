@@ -2372,8 +2372,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F010005
-			public const int action_settings = 2130771973;
+			// aapt resource value: 0x7F010007
+			public const int action_settings = 2130771975;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2399,6 +2399,9 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
+			// aapt resource value: 0x7F010006
+			public const int button1 = 2130771974;
+			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
 			
@@ -2422,6 +2425,9 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F0C0022
 			public const int coordinator = 2131492898;
+			
+			// aapt resource value: 0x7F010002
+			public const int coordinatorLayout1 = 2130771970;
 			
 			// aapt resource value: 0x7F0C0023
 			public const int custom = 2131492899;
@@ -2464,9 +2470,6 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
-			
-			// aapt resource value: 0x7F010003
-			public const int fab = 2130771971;
 			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
@@ -2519,9 +2522,6 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F010004
-			public const int loginButton = 2130771972;
-			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
 			
@@ -2564,6 +2564,9 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F0C004F
 			public const int parent_matrix = 2131492943;
 			
+			// aapt resource value: 0x7F010005
+			public const int passWord = 2130771973;
+			
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
@@ -2575,6 +2578,9 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
+			
+			// aapt resource value: 0x7F010003
+			public const int relativeLayout = 2130771971;
 			
 			// aapt resource value: 0x7F0C0054
 			public const int right = 2131492948;
@@ -2720,9 +2726,6 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
-			// aapt resource value: 0x7F010002
-			public const int toolbar = 2130771970;
-			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
 			
@@ -2752,6 +2755,9 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F0C008D
 			public const int up = 2131493005;
+			
+			// aapt resource value: 0x7F010004
+			public const int userName = 2130771972;
 			
 			// aapt resource value: 0x7F0C008E
 			public const int view_offset_helper = 2131493006;
@@ -2898,9 +2904,6 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F020002
 			public const int activity_main = 2130837506;
-			
-			// aapt resource value: 0x7F020003
-			public const int content_main = 2130837507;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -3157,6 +3160,12 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7F150020
 			public const int character_counter_pattern = 2132082720;
 			
+			// aapt resource value: 0x7F070004
+			public const int loginButton = 2131165188;
+			
+			// aapt resource value: 0x7F070006
+			public const int passWord = 2131165190;
+			
 			// aapt resource value: 0x7F150021
 			public const int password_toggle_content_description = 2132082721;
 			
@@ -3177,6 +3186,9 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7F150001
 			public const int status_bar_notification_info_overflow = 2132082689;
+			
+			// aapt resource value: 0x7F070005
+			public const int userName = 2131165189;
 			
 			static String()
 			{

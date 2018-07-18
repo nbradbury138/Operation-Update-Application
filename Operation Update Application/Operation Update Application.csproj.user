@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Pixel_2_API_27</SelectedDevice>
     <DefaultDevice>Pixel_2_API_27</DefaultDevice>
-    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>pixel</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

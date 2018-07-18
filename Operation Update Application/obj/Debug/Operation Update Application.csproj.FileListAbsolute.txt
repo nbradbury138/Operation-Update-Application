@@ -2,13 +2,11 @@ C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Appli
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\Operation Update Application.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\Operation_Update_Application.Operation_Update_Application.apk
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\Operation_Update_Application.Operation_Update_Application-Signed.apk
-C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\Operation Update Application.csprojAssemblyReference.cache
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\Operation Update Application.csproj.CoreCompileInputs.cache
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\Operation Update Application.dll
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\Operation Update Application.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\android\bin\Operation_Update_Application.Operation_Update_Application.apk
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\res\layout\activity_main.xml
-C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\res\layout\content_main.xml
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\res\values\colors.xml
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\res\values\dimens.xml
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\res\values\ic_launcher_background.xml
@@ -35,6 +33,7 @@ C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Appli
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\R.cs.flag
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\R.txt
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\uploadflags.txt
+C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\Operation Update Application.csprojAssemblyReference.cache
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\Mono.Android.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\mscorlib.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\System.Core.pdb
@@ -68,5 +67,3 @@ C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Appli
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\bin\Debug\Operation Update Application.dll
-C:\Users\Nathan\source\repos\Operation Update Application\Operation Update Application\obj\Debug\linksrc\Operation Update Application.dll.mdb
