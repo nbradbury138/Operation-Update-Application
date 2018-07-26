@@ -37,10 +37,10 @@
             android:layout_marginTop="70dp"
             android:text="@string/passWord" />
         <Button
-            android:text="Button"
+            android:text="@string/loginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1"
+            android:id="@+id/loginButton"
             android:layout_marginTop="200dp"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>

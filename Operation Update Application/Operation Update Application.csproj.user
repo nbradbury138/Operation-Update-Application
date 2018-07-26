@@ -4,6 +4,6 @@
     <SelectedDevice>Pixel_2_API_27</SelectedDevice>
     <DefaultDevice>Pixel_2_API_27</DefaultDevice>
     <AndroidDesignerPreferredDevice>pixel</AndroidDesignerPreferredDevice>
-    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>AppTheme.NoActionBar</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

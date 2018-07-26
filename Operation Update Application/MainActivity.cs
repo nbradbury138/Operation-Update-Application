@@ -5,6 +5,8 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Util;
+using Android.Content;
 
 namespace Operation_Update_Application
 {
@@ -18,7 +20,16 @@ namespace Operation_Update_Application
 
 			SetContentView(Resource.Layout.activity_main);
 
-		}
+            var loginButton = FindViewById<Button>(Resource.Id.loginButton);
+
+            loginButton.Click += (object sender, System.EventArgs e) =>
+            {
+                var newActivity = new Intent(this, typeof(OperationListActivity));
+                StartActivity(newActivity);
+            };
+
+
+        }
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
         {
