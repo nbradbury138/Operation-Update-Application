@@ -18,15 +18,15 @@ namespace Operation_Update_Application
 		{
 			base.OnCreate(savedInstanceState);
 
-			SetContentView(Resource.Layout.activity_main);
+			SetContentView(Resource.Layout.activity_operation_update_success);
 
-            var loginButton = FindViewById<Button>(Resource.Id.loginButton);
+           // var loginButton = FindViewById<Button>(Resource.Id.loginButton);
 
-            loginButton.Click += (object sender, System.EventArgs e) =>
-            {
-                var newActivity = new Intent(this, typeof(OperationListActivity));
-                StartActivity(newActivity);
-            };
+           // loginButton.Click += (object sender, System.EventArgs e) =>
+           // {
+           //     var newActivity = new Intent(this, typeof(OperationListActivity));
+           //     StartActivity(newActivity);
+           // };
 
 
         }

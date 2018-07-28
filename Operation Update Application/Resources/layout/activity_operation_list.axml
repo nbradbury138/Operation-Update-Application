@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/opList"
-        android:padding="5sp"
-        android:layout_width="fill_parent"
-        android:singleLine="true"
-        android:gravity="center"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/relativeLayout">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:background="@android:color/darker_gray"
-        android:layout_height="fill_parent" />
+        android:id="@+id/constraintLayout">
+        <TextView
+            style="@style/ButtonStyle"
+            android:id="@+id/opStatus"
+            android:text="@string/opStatus"
+            android:padding="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Spinner
+            style="@style/SpinnerStyle"
+            android:id="@+id/filter"
+            android:entries="@array/status"
+            app:layout_constraintTop_toBottomOf="@id/opStatus" />
+        <ListView
+            style="@style/ListView"
+            android:id="@+id/opList"
+            android:background="@android:color/white"
+            android:entries="@array/ops"
+            app:layout_constraintTop_toBottomOf="@id/filter"
+            app:layout_constraintBottom_toBottomOf="@id/relativeLayout" />
+    </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

@@ -1,47 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:id="@+id/coordinatorLayout1">
-    <RelativeLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/scrollView">
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/relativeLayout"
-        android:background="@android:color/darker_gray">
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/constraintLayout">
         <EditText
             android:id="@+id/userName"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/userName">
+            style="@style/EditTextMainStyle"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="@string/userName">
             <requestFocus />
         </EditText>
         <EditText
             android:id="@+id/passWord"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="70dp"
-            android:text="@string/passWord" />
+            style="@style/EditTextMainStyle"
+            app:layout_constraintTop_toBottomOf="@id/userName"
+            android:hint="@string/passWord" />
         <Button
+            style="@style/ButtonStyle"
             android:text="@string/loginButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/loginButton"
-            android:layout_marginTop="200dp"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-</android.support.design.widget.CoordinatorLayout>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passWord" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

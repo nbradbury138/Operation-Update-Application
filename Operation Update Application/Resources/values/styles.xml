@@ -13,7 +13,42 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  <style name="TextBoxStyle">
+  <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="EditTextMainStyle">
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="ButtonStyle">
+    <item name="android:layout_marginTop">50dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="SpinnerStyle">
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">40dp</item>
+    <item name="android:padding">5sp</item>
+  </style>
+
+  <style name="ListView">
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_marginBottom">15dp</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">5sp</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

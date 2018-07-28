@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/scrollView">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/constraintLayout">
+        <TextView
+            android:id="@+id/opNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/operationNumberExample" />
+        <TextView
+            style="@style/TextBoxStyle"
+            android:id="@+id/startDate"
+            android:text="@string/startDate"
+            app:layout_constraintTop_toBottomOf="@id/opNumber" />
+        <EditText
+            style="@style/TextBoxStyle"
+            android:id="@+id/startDateText"
+            android:hint="@string/dateExample"
+            app:layout_constraintTop_toBottomOf="@id/startDate"
+            android:inputType="date"
+            android:maxLines="1" />
+        <TextView
+            style="@style/TextBoxStyle"
+            android:id="@+id/opType"
+            app:layout_constraintTop_toBottomOf="@id/startDateText"
+            android:text="@string/operationType" />
+        <Spinner
+            style="@style/SpinnerStyle"
+            android:id="@+id/opTypeSpinner"
+            android:entries="@array/type"
+            app:layout_constraintTop_toBottomOf="@id/opType" />
+        <TextView
+            style="@style/TextBoxStyle"
+            android:id="@+id/opStatus"
+            app:layout_constraintTop_toBottomOf="@id/opTypeSpinner"
+            android:text="@string/operationStatus" />
+        <Spinner
+            style="@style/SpinnerStyle"
+            android:id="@+id/opStatusSpinner"
+            android:entries="@array/status"
+            app:layout_constraintTop_toBottomOf="@id/opStatus" />
+        <TextView
+            style="@style/TextBoxStyle"
+            android:id="@+id/percentComplete"
+            app:layout_constraintTop_toBottomOf="@id/opStatusSpinner"
+            android:text="@string/percentComplete" />
+        <EditText
+            style="@style/TextBoxStyle"
+            android:id="@+id/percentCompleteText"
+            app:layout_constraintTop_toBottomOf="@id/percentComplete"
+            android:hint="@string/percentComplete"
+            android:inputType="number"
+            android:maxLines="1" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/saveButton"
+            android:id="@+id/saveButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/percentCompleteText" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

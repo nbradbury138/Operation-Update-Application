@@ -2,6 +2,44 @@
     <string name="app_name">Operation_Update_Application</string>
     <string name="action_settings">Settings</string>
     <string name="loginButton">Login</string>
+  <string name="saveButton">Save</string>
     <string name="userName">User Name</string>
     <string name="passWord">Password</string>
+
+  <string name="savedSuccessText">Saved Successfully...</string>
+  <string name="homeButton">Home</string>
+  <string name="opStatus">Operation Status</string>
+  
+  <string name="startDate">Start Date</string>
+  <string name="operationType">Operation Type</string>
+    <string name="operationStatus">Operation Status</string>
+      <string name="percentComplete">Percent Complete</string>
+  
+  <string name="operationNumberExample">489561</string>
+  <string name="percentExample">20%</string>
+    <string name="dateExample">10/7/18</string>
+
+  <string-array name="ops">
+    <item>425698</item>
+    <item>123456</item>
+    <item>789546</item>
+      <item>425698</item>
+    <item>123456</item>
+    <item>789546</item>
+          <item>425698</item>
+    <item>123456</item>
+  </string-array>
+
+  <string-array name="status">
+    <item>Planned</item>
+    <item>Current</item>
+    <item>Complete</item>
+  </string-array>
+  
+  <string-array name="type">
+    <item>Burn</item>
+    <item>Seed</item>
+    <item>Harv</item>
+  </string-array>
+  
 </resources>
