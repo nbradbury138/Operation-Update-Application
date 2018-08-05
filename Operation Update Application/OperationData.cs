@@ -14,13 +14,16 @@ namespace Operation_Update_Application
 {
     class OperationData
     {
-        public int OperationId { get; set; }
+        public int JobNo { get; set; }
         public string OperationType { get; set; }
+        public string OperationStatus { get; set; }
+        public string ResponsibleUser { get; set; }
+        public DateTime StartDate { get; set; }
         public int CompletedPercent { get; set; }
 
         public override string ToString()
         {
-            return OperationId.ToString();
+            return JobNo.ToString();
         }
     }
 }

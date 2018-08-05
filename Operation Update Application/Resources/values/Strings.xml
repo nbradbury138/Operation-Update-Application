@@ -8,6 +8,7 @@
 
   <string name="savedSuccessText">Saved Successfully...</string>
   <string name="homeButton">Home</string>
+  <string name="recreateDatabase">Recreate Database</string>
   <string name="opStatus">Operation Status</string>
   
   <string name="startDate">Start Date</string>
@@ -37,9 +38,9 @@
   </string-array>
   
   <string-array name="type">
-    <item>Burn</item>
-    <item>Seed</item>
-    <item>Harv</item>
+    <item>Burning</item>
+    <item>Seeding</item>
+    <item>Harvesting</item>
   </string-array>
   
 </resources>

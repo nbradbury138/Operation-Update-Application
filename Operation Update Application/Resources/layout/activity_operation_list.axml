@@ -16,11 +16,10 @@
         android:background="@android:color/darker_gray"
         android:id="@+id/constraintLayout">
         <TextView
-            style="@style/ButtonStyle"
+            style="@style/TopLabelStyle"
             android:id="@+id/opStatus"
             android:text="@string/opStatus"
             android:padding="5sp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             app:layout_constraintTop_toTopOf="parent" />
         <Spinner
             style="@style/SpinnerStyle"
@@ -29,7 +28,7 @@
             app:layout_constraintTop_toBottomOf="@id/opStatus" />
         <ListView
             style="@style/ListView"
-            android:id="@+id/opList"
+            android:id="@android:id/list"
             android:background="@android:color/white"
             android:entries="@array/ops"
             app:layout_constraintTop_toBottomOf="@id/filter"

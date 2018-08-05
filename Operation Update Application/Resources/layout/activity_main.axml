@@ -34,5 +34,12 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/passWord" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/recreateDatabase"
+            android:id="@+id/recreateDatabase"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -7,47 +7,86 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Util;
 using Android.Content;
+using Mono.Data.Sqlite;
+using System.Data;
+using System.IO;
 
 namespace Operation_Update_Application
 {
-	[Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
 	public class MainActivity : AppCompatActivity
 	{
 
-		protected override void OnCreate(Bundle savedInstanceState)
+
+
+        protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
 
-			SetContentView(Resource.Layout.activity_operation_update_success);
+            Data dataBase = new Data();
 
-           // var loginButton = FindViewById<Button>(Resource.Id.loginButton);
+            CheckPermissions();
+            SqliteConnection dbConn = dataBase.SetUpDatabase();
 
-           // loginButton.Click += (object sender, System.EventArgs e) =>
-           // {
-           //     var newActivity = new Intent(this, typeof(OperationListActivity));
-           //     StartActivity(newActivity);
-           // };
+			SetContentView(Resource.Layout.activity_main);
 
+           var loginButton = FindViewById<Button>(Resource.Id.loginButton);
 
-        }
+           loginButton.Click += (object sender, System.EventArgs e) =>
+           {
+               var password = FindViewById<EditText>(Resource.Id.passWord);
+               var user = FindViewById<EditText>(Resource.Id.userName);
 
-		public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
-            return true;
-        }
+               SqliteCommand command = new SqliteCommand(dbConn);
+               command.CommandText = "SELECT COUNT(USERNAME) FROM USER WHERE PASSWORD = '" + password.Text + "' and USERNAME = '" + user.Text + "'";
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
+               if (Convert.ToInt32(command.ExecuteScalar()) == 1)
+               {
+                   var newActivity = new Intent(this, typeof(OperationListActivity));
+                   newActivity.PutExtra("user", user.Text);
+                   StartActivity(newActivity);
+               }
+               else
+               {
+                   Toast.MakeText(this, "Failed login, try john and john or recreate database",ToastLength.Long).Show();                 
+               }
+           };
+
+            var recreateButton = FindViewById<Button>(Resource.Id.recreateDatabase);
+
+            recreateButton.Click += (object sender, System.EventArgs e) =>
             {
-                return true;
+                dataBase.RecreateDatabase();
+            };
+
+        }
+
+
+        protected void CheckPermissions()
+        {
+            if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(this, Android.Manifest.Permission.WriteExternalStorage) != (int)Android.Content.PM.Permission.Granted)
+            {
+                // Permission has never been accepted
+                // So, I ask the user for permission
+                RequestPermissions(new String[] { Android.Manifest.Permission.WriteExternalStorage },0);
+            }
+            else
+            {
+                // Permission has already been accepted previously
             }
 
-            return base.OnOptionsItemSelected(item);
+            if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(this, Android.Manifest.Permission.ReadExternalStorage) != (int)Android.Content.PM.Permission.Granted)
+            {
+                // Permission has never been accepted
+                // So, I ask the user for permission
+                RequestPermissions(new String[] { Android.Manifest.Permission.ReadExternalStorage }, 0);
+            }
+            else
+            {
+                // Permission has already been accepted previously
+            }
         }
-
-	}
+    }
 }
 

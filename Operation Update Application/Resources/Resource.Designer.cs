@@ -2748,8 +2748,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f080048
 			public const int fill_vertical = 2131230792;
 			
-			// aapt resource value: 0x7f0800a7
-			public const int filter = 2131230887;
+			// aapt resource value: 0x7f0800a8
+			public const int filter = 2131230888;
 			
 			// aapt resource value: 0x7f080054
 			public const int @fixed = 2131230804;
@@ -2856,23 +2856,20 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f0800c1
 			public const int notification_main_column_container = 2131230913;
 			
-			// aapt resource value: 0x7f0800a8
-			public const int opList = 2131230888;
-			
-			// aapt resource value: 0x7f08009c
-			public const int opNumber = 2131230876;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int opStatus = 2131230881;
+			// aapt resource value: 0x7f08009d
+			public const int opNumber = 2131230877;
 			
 			// aapt resource value: 0x7f0800a2
-			public const int opStatusSpinner = 2131230882;
+			public const int opStatus = 2131230882;
 			
-			// aapt resource value: 0x7f08009f
-			public const int opType = 2131230879;
+			// aapt resource value: 0x7f0800a3
+			public const int opStatusSpinner = 2131230883;
 			
 			// aapt resource value: 0x7f0800a0
-			public const int opTypeSpinner = 2131230880;
+			public const int opType = 2131230880;
+			
+			// aapt resource value: 0x7f0800a1
+			public const int opTypeSpinner = 2131230881;
 			
 			// aapt resource value: 0x7f08005c
 			public const int packed = 2131230812;
@@ -2895,11 +2892,11 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f080059
 			public const int percent = 2131230809;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int percentComplete = 2131230883;
-			
 			// aapt resource value: 0x7f0800a4
-			public const int percentCompleteText = 2131230884;
+			public const int percentComplete = 2131230884;
+			
+			// aapt resource value: 0x7f0800a5
+			public const int percentCompleteText = 2131230885;
 			
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
@@ -2913,8 +2910,11 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f080082
 			public const int radio = 2131230850;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int relativeLayout = 2131230886;
+			// aapt resource value: 0x7f08009c
+			public const int recreateDatabase = 2131230876;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int relativeLayout = 2131230887;
 			
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
@@ -2925,8 +2925,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f0800c3
 			public const int right_side = 2131230915;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int saveButton = 2131230885;
+			// aapt resource value: 0x7f0800a6
+			public const int saveButton = 2131230886;
 			
 			// aapt resource value: 0x7f0800a9
 			public const int saveSuccess = 2131230889;
@@ -3042,11 +3042,11 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f08009d
-			public const int startDate = 2131230877;
-			
 			// aapt resource value: 0x7f08009e
-			public const int startDateText = 2131230878;
+			public const int startDate = 2131230878;
+			
+			// aapt resource value: 0x7f08009f
+			public const int startDateText = 2131230879;
 			
 			// aapt resource value: 0x7f0800be
 			public const int status_bar_latest_event_content = 2131230910;
@@ -3548,8 +3548,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
 			
-			// aapt resource value: 0x7f090036
-			public const int dateExample = 2131296310;
+			// aapt resource value: 0x7f090037
+			public const int dateExample = 2131296311;
 			
 			// aapt resource value: 0x7f09002e
 			public const int homeButton = 2131296302;
@@ -3557,17 +3557,17 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f090029
 			public const int loginButton = 2131296297;
 			
-			// aapt resource value: 0x7f09002f
-			public const int opStatus = 2131296303;
+			// aapt resource value: 0x7f090030
+			public const int opStatus = 2131296304;
 			
-			// aapt resource value: 0x7f090034
-			public const int operationNumberExample = 2131296308;
+			// aapt resource value: 0x7f090035
+			public const int operationNumberExample = 2131296309;
+			
+			// aapt resource value: 0x7f090033
+			public const int operationStatus = 2131296307;
 			
 			// aapt resource value: 0x7f090032
-			public const int operationStatus = 2131296306;
-			
-			// aapt resource value: 0x7f090031
-			public const int operationType = 2131296305;
+			public const int operationType = 2131296306;
 			
 			// aapt resource value: 0x7f09002c
 			public const int passWord = 2131296300;
@@ -3587,11 +3587,14 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f090025
 			public const int path_password_strike_through = 2131296293;
 			
-			// aapt resource value: 0x7f090033
-			public const int percentComplete = 2131296307;
+			// aapt resource value: 0x7f090034
+			public const int percentComplete = 2131296308;
 			
-			// aapt resource value: 0x7f090035
-			public const int percentExample = 2131296309;
+			// aapt resource value: 0x7f090036
+			public const int percentExample = 2131296310;
+			
+			// aapt resource value: 0x7f09002f
+			public const int recreateDatabase = 2131296303;
 			
 			// aapt resource value: 0x7f09002a
 			public const int saveButton = 2131296298;
@@ -3602,8 +3605,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f090011
 			public const int search_menu_title = 2131296273;
 			
-			// aapt resource value: 0x7f090030
-			public const int startDate = 2131296304;
+			// aapt resource value: 0x7f090031
+			public const int startDate = 2131296305;
 			
 			// aapt resource value: 0x7f090026
 			public const int status_bar_notification_info_overflow = 2131296294;
@@ -3645,14 +3648,14 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f0a0180
 			public const int AppTheme = 2131362176;
 			
-			// aapt resource value: 0x7f0a0187
-			public const int AppTheme_AppBarOverlay = 2131362183;
+			// aapt resource value: 0x7f0a0188
+			public const int AppTheme_AppBarOverlay = 2131362184;
 			
 			// aapt resource value: 0x7f0a0181
 			public const int AppTheme_NoActionBar = 2131362177;
 			
-			// aapt resource value: 0x7f0a0188
-			public const int AppTheme_PopupOverlay = 2131362184;
+			// aapt resource value: 0x7f0a0189
+			public const int AppTheme_PopupOverlay = 2131362185;
 			
 			// aapt resource value: 0x7f0a009a
 			public const int Base_AlertDialog_AppCompat = 2131361946;
@@ -4149,8 +4152,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f0a0183
 			public const int EditTextMainStyle = 2131362179;
 			
-			// aapt resource value: 0x7f0a0186
-			public const int ListView = 2131362182;
+			// aapt resource value: 0x7f0a0187
+			public const int ListView = 2131362183;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int Platform_AppCompat = 2131361822;
@@ -4236,8 +4239,8 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f0a0038
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131361848;
 			
-			// aapt resource value: 0x7f0a0185
-			public const int SpinnerStyle = 2131362181;
+			// aapt resource value: 0x7f0a0186
+			public const int SpinnerStyle = 2131362182;
 			
 			// aapt resource value: 0x7f0a00c7
 			public const int TextAppearance_AppCompat = 2131361991;
@@ -4547,6 +4550,9 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7f0a010d
 			public const int ThemeOverlay_AppCompat_Light = 2131362061;
+			
+			// aapt resource value: 0x7f0a0185
+			public const int TopLabelStyle = 2131362181;
 			
 			// aapt resource value: 0x7f0a010e
 			public const int Widget_AppCompat_ActionBar = 2131362062;
