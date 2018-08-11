@@ -1,15 +1,22 @@
 # Operation-Update-Application-SIT313-NathanBradbury
 
-Project name: Operation-Update-Application
+**Project name:**
 
-Description: A description of your project follows. A good description is clear, short, and to the point. Describe the importance of your project, and what it does.
+Operation-Update-Application
 
-Installation: Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
+**Description:**
 
-Usage: The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+This application has been create for Project 1 of SIT313 and is based on a real world requirement. The application is designed to allow the user to update particular "Operations" and their details specifically the percentage completion of each operation.
 
-Contributing: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
+**Installation:**
 
-Credits: Include a section for credits in order to highlight and link to the authors of your project.
+To install this application it can be run through the IDE on an emulator or plugged in device. The applciation requires permissions to write to a database and must be accepted ons tartup to function. Once installed start the application.
 
-License: Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide!
+**Usage:**
+
+The first page is the main login page with a login button. There is also a Recreate Database button used to reset the database to it's default settings. This is implemented as a debuggin feature to allow the database to be reset if needed. To login either use the username **john** and password **john** or the username **smith** and password **smith**.
+Depending on the user you log in with you will see a couple of different operations. Using the spinner filter you can change which operations are seen. By selecting an operation you are taken to the details page which allows editing of the values and a save button updates the database before taking you back to the list.
+
+**License:**
+
+
