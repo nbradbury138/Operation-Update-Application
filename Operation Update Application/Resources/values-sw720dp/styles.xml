@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+  <style name="TextBoxStyle">
+  <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+      <item name="android:textSize">@dimen/text720</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="EditTextMainStyle">
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+      <item name="android:textSize">@dimen/text720</item>
+  </style>
+
+  <style name="ButtonStyle">
+    <item name="android:layout_marginTop">50dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/text720</item>
+  </style>
+
+  <style name="TopLabelStyle">
+    <item name="android:layout_marginTop">5dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+      <item name="android:textSize">@dimen/text720</item>
+      <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="SpinnerStyle">
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">5sp</item>
+    <item name="android:textSize">@dimen/text720</item>
+  </style>
+
+  <style name="ListView">
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_marginBottom">15dp</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text720</item>
+    <item name="android:padding">5sp</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

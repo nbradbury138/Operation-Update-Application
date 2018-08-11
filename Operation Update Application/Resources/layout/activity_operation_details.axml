@@ -16,9 +16,8 @@
         android:background="@android:color/darker_gray"
         android:id="@+id/constraintLayout">
         <TextView
+            style="@style/TopLabelStyle"
             android:id="@+id/opNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/operationNumberExample" />

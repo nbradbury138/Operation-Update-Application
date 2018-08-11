@@ -23,24 +23,40 @@ namespace Operation_Update_Application
 
         }
 
+        /// <summary>
+        /// Method used for setting up the sqlite database
+        /// </summary>
+        /// <returns></returns>
         public SqliteConnection SetUpDatabase()
         {
-
+            //set the path of where the db will be kept.
             string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
+            //combine with the file name
             string combined = Path.Combine(path, "OperationDatabase.sqlite");
 
+            //check if it exists, if it does not create the file and set the connection.
             if (!File.Exists(combined))
             {
                 SqliteConnection.CreateFile(combined);
+                dbConn = new SqliteConnection("Data Source =" + combined);
+                dbConn.Open();
+                //call the recreate db method to set the initial data.
                 RecreateDatabase();
             }
+            //otherwise if the file exists just open the connection
+            else
+            {
+                dbConn = new SqliteConnection("Data Source =" + combined);
+                dbConn.Open();
+            }
 
-            dbConn = new SqliteConnection("Data Source =" + combined);
-            dbConn.Open();
-
+            //return the connection
             return dbConn;
         }
 
+        /// <summary>
+        /// Used to set up the data or reset up the data in the data base with default informaiton
+        /// </summary>
         public void RecreateDatabase()
         {
             SqliteCommand command = new SqliteCommand(dbConn);
@@ -84,7 +100,6 @@ namespace Operation_Update_Application
             command.ExecuteNonQuery();
 
             //insert data
-
             nonQuery = "INSERT INTO user (username,password) VALUES ('john','john'),('smith','smith')";
             command.CommandText = nonQuery;
             command.ExecuteNonQuery();
@@ -97,13 +112,12 @@ namespace Operation_Update_Application
             command.CommandText = nonQuery;
             command.ExecuteNonQuery();
 
-            nonQuery = "INSERT INTO OPERATION VALUES (47215,'2018-01-20','BURN','CU','john',15),(47217,'2018-02-20','HARV','PL','john',0),(47220,'2018-04-15','SEED','CO','smith',100),(47219,'2018-05-19','HARV','PL','smith',0)";
+            nonQuery = "INSERT INTO OPERATION VALUES (47215,'2018-01-20','BURN','CU','john',15),(47217,'2018-02-20','HARV','PL','john',0),(47220,'2018-04-15','SEED','CO','smith',100),(47219,'2018-05-19','HARV','PL','smith',0)," +
+                "(47216,'2018-02-12','BURN','PL','john',0),(47218,'2018-01-13','HARV','CO','john',100),(47221,'2018-04-17','SEED','CU','smith',57),(47222,'2018-06-21','HARV','CU','smith',16)";
             command.CommandText = nonQuery;
             command.ExecuteNonQuery();
 
         }
-
-
 
     }
 }

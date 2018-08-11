@@ -12,6 +12,9 @@ using Android.Widget;
 
 namespace Operation_Update_Application
 {
+    /// <summary>
+    /// method for holding operation data in an object usable by the application.
+    /// </summary>
     class OperationData
     {
         public int JobNo { get; set; }
@@ -21,6 +24,7 @@ namespace Operation_Update_Application
         public DateTime StartDate { get; set; }
         public int CompletedPercent { get; set; }
 
+        //to string for showing the operation number
         public override string ToString()
         {
             return JobNo.ToString();

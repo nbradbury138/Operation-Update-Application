@@ -1930,6 +1930,9 @@ namespace Operation_Update_Application
 			// aapt resource value: 0x7f07008f
 			public const int compat_control_corner_material = 2131165327;
 			
+			// aapt resource value: 0x7f07009e
+			public const int defaultSize = 2131165342;
+			
 			// aapt resource value: 0x7f070069
 			public const int design_appbar_elevation = 2131165289;
 			
@@ -2136,6 +2139,12 @@ namespace Operation_Update_Application
 			
 			// aapt resource value: 0x7f07009a
 			public const int notification_top_pad_large_text = 2131165338;
+			
+			// aapt resource value: 0x7f07009d
+			public const int text480 = 2131165341;
+			
+			// aapt resource value: 0x7f07009c
+			public const int text720 = 2131165340;
 			
 			// aapt resource value: 0x7f070059
 			public const int tooltip_corner_radius = 2131165273;
@@ -3390,10 +3399,13 @@ namespace Operation_Update_Application
 			public const int select_dialog_singlechoice_material = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int support_simple_spinner_dropdown_item = 2130968638;
+			public const int spinner_text_layout = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int tooltip = 2130968639;
+			public const int support_simple_spinner_dropdown_item = 2130968639;
+			
+			// aapt resource value: 0x7f040040
+			public const int tooltip = 2130968640;
 			
 			static Layout()
 			{
