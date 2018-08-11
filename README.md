@@ -19,4 +19,7 @@ Depending on the user you log in with you will see a couple of different operati
 
 **License:**
 
+**Change Log**
+
+See the changelog.md file
 
