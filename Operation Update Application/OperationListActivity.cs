@@ -85,7 +85,8 @@ namespace Operation_Update_Application
             SqliteConnection dbConn = db.SetUpDatabase();
             SqliteCommand command = new SqliteCommand(dbConn);
             //select all oeprations for user
-            command.CommandText = "SELECT * FROM OPERATION WHERE RESPONSIBLE_USER ='" + username + "' AND OPERATION_STATUS = (SELECT OPERATION_STATUS_CODE FROM LU_OPERATION_STATUS WHERE OPERATION_STATUS_DESCRIPTION = '" + opStatusString + "')";
+            command.CommandText = "SELECT * FROM OPERATION WHERE RESPONSIBLE_USER ='" + username + 
+                "' AND OPERATION_STATUS = (SELECT OPERATION_STATUS_CODE FROM LU_OPERATION_STATUS WHERE OPERATION_STATUS_DESCRIPTION = '" + opStatusString + "')";
             //load into datatable
             DataTable dt = new DataTable();
             dt.Load(command.ExecuteReader());

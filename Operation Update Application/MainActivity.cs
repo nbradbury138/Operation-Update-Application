@@ -83,7 +83,7 @@ namespace Operation_Update_Application
         /// </summary>
         protected void CheckPermissions()
         {
-            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) != (int)Android.Content.PM.Permission.Granted)
+            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) != (int)Permission.Granted)
             {
                 //ask for permission
                 RequestPermissions(new String[] { Android.Manifest.Permission.WriteExternalStorage }, 100);
@@ -93,7 +93,7 @@ namespace Operation_Update_Application
                 //permission already granted
             }
 
-            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) != (int)Android.Content.PM.Permission.Granted)
+            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) != (int)Permission.Granted)
             {
                 //ask for permission
                 RequestPermissions(new String[] { Manifest.Permission.ReadExternalStorage }, 100);
@@ -138,10 +138,8 @@ namespace Operation_Update_Application
                         permDialog.Show();
                     }
                 }
-
                 break;
             }
-
         }
     }
 }
